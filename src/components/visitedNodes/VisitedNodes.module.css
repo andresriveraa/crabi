@@ -37,4 +37,26 @@
     width: 100%;
     height: 100%;
   }
+
+  @media screen and (max-width: 420px) {
+    width: 100%;
+    height: fit-content;
+    
+    .actual-step-title {
+      display: none;
+    }
+    .steps {
+      overflow: scroll;
+      flex-direction: row;
+
+      .step {
+        font-size: 32px;
+      }
+    }
+    
+    .gradient {
+      display: none;
+
+    }
+  }
 }

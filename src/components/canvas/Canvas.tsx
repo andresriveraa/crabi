@@ -3,7 +3,7 @@ import { GRAPHGS } from "../../data";
 import { Edge, Node } from "./class";
 import { GraphCanvasProps } from "./canvas.models";
 import { generateGraph } from "./utils";
-
+import styles from './Canvas.module.css';
 
 const GraphCanvas = ({
   neighborgs,
@@ -22,6 +22,10 @@ const GraphCanvas = ({
   });
 
   const resizeCanvas = (canvas: HTMLCanvasElement): void => {
+    const isMobile = window.innerWidth < 420;
+    const width = isMobile ? 400 : 500;
+    const height = isMobile ? 400 : 600;
+
     canvas.width = width;
     canvas.height = height;
     canvasSize.current = { width, height };
@@ -119,6 +123,7 @@ const GraphCanvas = ({
       style={{ display: "block", backgroundColor: "#f0f0f0" }}
       onClick={handleClick}
       onMouseMove={handleMouseMove}
+      className={styles["canvas"]}
     />
   );
 };

@@ -1,6 +1,10 @@
 .logo {
   width: 120px;
   margin-top: 16px;
+
+  @media screen and (max-width: 420px) {
+    display: none;
+  }
 }
 
 .from-to-steps {
@@ -33,6 +37,11 @@
   & .last-step {
     grid-area: 2 / 2 / span 1 / span 1;
   }
+
+  @media screen and (max-width: 420px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 .cost {
@@ -41,4 +50,9 @@
   color: var(--color-title);
   text-align: center;
   margin: 0;
+
+  @media screen and (max-width: 420px) {
+    font-size: 40px;
+
+  }
 }
