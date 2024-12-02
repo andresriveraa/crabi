@@ -1,0 +1,44 @@
+.logo {
+  width: 120px;
+  margin-top: 16px;
+}
+
+.from-to-steps {
+  display: grid;
+  grid-template: 50%  50% / 1fr 1fr;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  p {
+    margin: 0;
+  }
+
+  & .title-initial-step, & .title-last-step {
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  & .title-initial-step {
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+
+  & .initial-step {
+    grid-area: 2 / 1 / span 1 / span 1;
+  }
+
+  & .title-last-step {
+    grid-area: 1 / 2 / span 1 / span 1;
+  }
+
+  & .last-step {
+    grid-area: 2 / 2 / span 1 / span 1;
+  }
+}
+
+.cost {
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--color-title);
+  text-align: center;
+  margin: 0;
+}

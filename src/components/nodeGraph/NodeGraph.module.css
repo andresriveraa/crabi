@@ -1,0 +1,12 @@
+
+.nodes-list {
+  & .title {
+    margin-bottom: 0;
+  } 
+  
+  & .description {
+    margin-top: 4px;
+    margin-bottom: 24px;
+  }
+}
+

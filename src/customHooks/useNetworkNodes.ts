@@ -47,7 +47,7 @@ const useNetworkNodes = () => {
     } else {
       setNewNeighbours();
     }
-  }, [route, actualNode, edges]);
+  }, [actualNode]);
 
   return {
     node,
